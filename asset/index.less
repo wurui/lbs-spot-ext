@@ -1,0 +1,50 @@
+.oxmod-lbs-spot-ext{
+/* CSS */
+	font-size:14px;
+	color:#333;
+	padding:10px 15px;
+	line-height: 1.5;
+	>h3{
+		font-size: 16px;
+		font-weight: 400;
+	}
+
+	.content{
+		
+		label{
+			font-weight: 700;
+		}
+		p{
+			white-space:pre-line;
+			margin: 8px 0;
+		}
+	}
+	.wrap{
+		//height: 68px;
+		//overflow: hidden;
+		.content{
+			height: 56px;
+			overflow: hidden;
+		}
+		p{
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 1;
+			overflow: hidden;
+		}
+		.bottom{
+			&:after{
+				content: '了解更多'
+			}
+		}
+	}
+	.bottom{
+		color:#09c;
+		text-align: center;
+		line-height: 30px;
+		margin-top: 10px;
+		&:after{
+			content: '收起'
+		}
+	}
+ }
